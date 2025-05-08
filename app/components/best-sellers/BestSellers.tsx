@@ -6,36 +6,14 @@ import {
 } from "@/components/ui/card"
 import Image from "next/image"
 
-const products = [
-  {
-    id: "1",
-    name: "GSW Jacket",
-    bestSeller: true,
-    photo: "/photos/products/gsw-jacket.png",
-    category: "Outerwears"
-  },
-  {
-    id: "2",
-    name: "GSW Jersey",
-    bestSeller: true,
-    photo: "/photos/products/gsw-jersey.png",
-    category: "Jerseys"
-  },
-  {
-    id: "3",
-    name: "GSW Cap",
-    bestSeller: true,
-    photo: "/photos/products/gsw-cap.png",
-    category: "Headwears"
-  }
-]
+import products from "@/data"
 
 const BestSellers = () => {
   return (
     <div className="flex flex-wrap md:flex-nowrap place-content-center p-2">
       {products.map((product) => 
-        <div key={product.id} className="p-1.5 text-center">
-          <Card>
+        <div key={product.id} className="p-2 text-center">
+          <Card className="px-10 md:px-2">
             <CardTitle>{product.name}</CardTitle>
             <CardContent>
               <Image 
