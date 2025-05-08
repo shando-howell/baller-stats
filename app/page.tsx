@@ -1,3 +1,4 @@
+import BestSellers from "./components/best-sellers/BestSellers";
 import Header from "./components/header/Header"
 
 export default function Home() {
@@ -5,7 +6,7 @@ export default function Home() {
     <div>
       <Header />
       <div>
-        <h1>Baller Stats</h1>
+        <BestSellers />
       </div>
     </div>
   );

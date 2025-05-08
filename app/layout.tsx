@@ -5,8 +5,8 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 
 export const metadata: Metadata = {
-  title: "Baller Stats",
-  description: "A web app dedicated to the player stats of the #1 NBA team.",
+  title: "Baller Fit",
+  description: "An ecommerce app to get merch for the #1 NBA team.",
 };
 
 export default function RootLayout({
