@@ -32,9 +32,9 @@ const products = [
 
 const BestSellers = () => {
   return (
-    <div className="flex flex-wrap md:flex-nowrap p-2">
+    <div className="flex flex-wrap md:flex-nowrap place-content-center p-2">
       {products.map((product) => 
-        <div key={product.id} className="px-1.5 text-center">
+        <div key={product.id} className="p-1.5 text-center">
           <Card>
             <CardTitle>{product.name}</CardTitle>
             <CardContent>
