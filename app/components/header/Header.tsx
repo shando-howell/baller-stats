@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="p-1">
+    <div className="py-1 px-2 md:py-3 md:px-6">
         <img 
             src="/photos/home-header-image.jpg"
             alt="Home page image"
