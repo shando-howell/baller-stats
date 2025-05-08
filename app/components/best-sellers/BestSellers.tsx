@@ -4,7 +4,6 @@ import {
   CardDescription,
   CardContent,
 } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
 const products = [
@@ -13,7 +12,7 @@ const products = [
     name: "GSW Jacket",
     bestSeller: true,
     photo: "/photos/products/gsw-jacket.png",
-    category: "Outerwear"
+    category: "Outerwears"
   },
   {
     id: "2",
@@ -27,15 +26,15 @@ const products = [
     name: "GSW Cap",
     bestSeller: true,
     photo: "/photos/products/gsw-cap.png",
-    category: "Headwear"
+    category: "Headwears"
   }
 ]
 
 const BestSellers = () => {
   return (
-    <div className="flex p-2">
+    <div className="flex flex-wrap md:flex-nowrap p-2">
       {products.map((product) => 
-        <div key={product.id} className="flex-row px-1.5 text-center">
+        <div key={product.id} className="px-1.5 text-center">
           <Card>
             <CardTitle>{product.name}</CardTitle>
             <CardContent>
@@ -47,9 +46,9 @@ const BestSellers = () => {
               />
             </CardContent>
             <CardDescription>
-              <Button variant="outline" className="w-full text-gray-800">
+              <p className="text-gray-800">
                 {product.category}
-              </Button>
+              </p>
             </CardDescription>
           </Card>
         </div>
