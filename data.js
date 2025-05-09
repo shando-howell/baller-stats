@@ -19,7 +19,45 @@ const products = [
       bestSeller: true,
       photo: "/photos/products/gsw-cap.png",
       category: "Headwears"
+    },
+    {
+      id: "4",
+      name: "GSW Socks",
+      bestSeller: true,
+      photo: "/photos/products/gsw-socks.png",
+      category: "Accessible"
     }
 ]
 
-export default products;
+const players = [
+  {
+    id: "4",
+    name: "Stephen Curry",
+    photo: "/photos/players/steph-curry.png",
+    position: "Point Guard",
+    number: "#30"
+  },
+  {
+    id: "5",
+    name: "Draymond Green",
+    photo: "/photos/players/draymond-green.png",
+    position: "Power Forward",
+    number: "#23"
+  },
+  {
+    id: "6",
+    name: "Jimmy Butler III",
+    photo: "/photos/players/jimmy-butler.png",
+    position: "Small Forward",
+    number: "#10"
+  },
+  {
+    id: "7",
+    name: "Brandin Podziemski",
+    photo: "/photos/players/brandin-podziemski.png",
+    position: "Guard",
+    number: "#2"
+  }
+]
+
+export { products, players }

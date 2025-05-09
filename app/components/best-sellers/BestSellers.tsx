@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/card"
 import Image from "next/image"
 
-import products from "@/data"
+import { products } from "@/data"
 
 const BestSellers = () => {
   return (
