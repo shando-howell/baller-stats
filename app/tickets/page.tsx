@@ -4,6 +4,7 @@ import {
   CardTitle,
   CardDescription,
   CardContent,
+  CardFooter
 } from "@/components/ui/card"
 import Image from "next/image"
 
@@ -33,7 +34,10 @@ const TicketsPage = () => {
                 Saturday, May 12th
               </p>
             </CardDescription>
-            <Button variant="outline">Purchase Tickets</Button>
+            <Button>Purchase Tickets</Button>
+            <CardFooter>
+              <h2>Unleash your fandom</h2>
+            </CardFooter>
           </Card>
         </div>
     </div>

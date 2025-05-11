@@ -8,14 +8,14 @@ const Navbar = () => {
             <span className="font-bold tracking-widest">BallerFit</span>
           </Link>
         </div>
-        <div className="px-1">
-          <Link href="/tickets">Tickets</Link>
+        <div className="px-2">
+          <Link href="/tickets">TICKETS</Link>
         </div>
-        <div className="px-1">
-          <Link href="/shop">Shop</Link>
+        <div className="px-2">
+          <Link href="/shop">SHOP</Link>
         </div>
-        <div className="px-1">
-          <Link href="/players">Players</Link>
+        <div className="px-2">
+          <Link href="/players">PLAYERS</Link>
         </div>
     </div>
   )
