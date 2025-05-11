@@ -11,7 +11,7 @@ import { products } from "@/data"
 const BestSellers = () => {
   return (
     <>
-      <div className="flex p-1.5 justify-center bg-blue-500 text-yellow-400">
+      <div className="flex p-9 justify-center bg-blue-500 text-yellow-400">
         <div><h1>BEST SELLERS</h1></div>
       </div>
       <div className="flex flex-wrap md:flex-nowrap place-content-center p-2">

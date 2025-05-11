@@ -1,7 +1,4 @@
 import type { Metadata } from "next";
-import {
-  ClerkProvider
-} from '@clerk/nextjs';
 import "./globals.css";
 
 import Navbar from "./components/navbar/Navbar";
@@ -20,7 +17,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
       <html lang="en">
         <body>
           <div className="flex flex-col h-screen">
@@ -34,6 +30,5 @@ export default function RootLayout({
           </div>
         </body>
       </html>
-    </ClerkProvider>
   );
 }

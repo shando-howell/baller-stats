@@ -9,7 +9,7 @@ const SearchBar = () => {
   }
 
   return (
-    <div className="flex py-2">
+    <div className="flex p-4">
         <Input className="mr-1" />
         <Button 
           variant="outline" 

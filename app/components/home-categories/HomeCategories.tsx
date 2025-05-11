@@ -4,7 +4,7 @@ import React from 'react'
 const HomeCategories = () => {
   return (
     <>
-      <div className="flex justify-center p-1.5 bg-yellow-500 text-blue-500">
+      <div className="flex justify-center p-3 bg-yellow-500 text-blue-500">
         <div className="px-2">
           <Link href="/">JERSEYS</Link>
         </div>

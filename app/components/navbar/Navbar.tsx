@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const Navbar = () => {
   return (
-    <div className="flex p-2 bg-blue-500 text-yellow-400">
+    <div className="flex px-3 py-4 bg-blue-500 text-yellow-400">
         <div className="flex-1">
           <Link href="/">
             <span className="font-bold tracking-widest">BallerFit</span>
