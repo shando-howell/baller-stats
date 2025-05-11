@@ -5,6 +5,9 @@ const Header = () => {
             src="/photos/home-header-image.jpg"
             alt="Home page image"
         />
+        <div className="p-4">
+          <h1>Logos</h1>
+        </div>
     </div>
   )
 }
