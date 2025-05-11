@@ -15,7 +15,7 @@ const AnnounceBar = () => {
         </div>
         <div className="flex-1 text-gray-700">
             <p>
-                Warrior News: Steph officially crowned 3 Point King.
+                Warrior News: Steph crowned NBA 3-Pt King!
             </p>
         </div>
     </div>
