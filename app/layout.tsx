@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
       <html lang="en">
-        <body>
+        <body className="bg-gray-100">
           <div className="flex flex-col h-screen">
             <AnnounceBar />
             <Navbar />

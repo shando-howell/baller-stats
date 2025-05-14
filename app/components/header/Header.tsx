@@ -7,7 +7,9 @@ const Header = () => {
             src="/photos/home-header-image.jpg"
             alt="Home page image"
         />
-        <div className="py-6 px-4">
+        <div 
+          className="py-6 px-4 bg-gray-100"
+        >
           <BrandsBar />
         </div>
     </div>

@@ -13,7 +13,7 @@ const SearchBar = () => {
         <Input className="mr-1" />
         <Button 
           variant="outline" 
-          className="text-blue-700 hover:text-yellow-700"
+          className="bg-gray-100 text-blue-700 hover:text-yellow-700"
           onClick={() => handleSearch()}
         >
           Search
