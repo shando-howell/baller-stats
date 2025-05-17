@@ -1,4 +1,5 @@
 import Link from "next/link"
+import AuthButtons from "../auth-buttons/AuthButtons"
 
 const Navbar = () => {
   return (
@@ -9,13 +10,16 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="px-2">
-          <Link href="/tickets">TICKETS</Link>
+          <Link href="/tickets">Tickets</Link>
         </div>
         <div className="px-2">
-          <Link href="/shop">SHOP</Link>
+          <Link href="/shop">Shop</Link>
         </div>
         <div className="px-2">
-          <Link href="/players">PLAYERS</Link>
+          <Link href="/players">Players</Link>
+        </div>
+        <div>
+          <AuthButtons/>
         </div>
     </div>
   )
