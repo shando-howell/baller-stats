@@ -4,9 +4,7 @@ import { use } from "react";
 import { Button } from "@/components/ui/button";
 import { NavigationContext } from "@/context/nav";
 import { Menu } from "lucide-react";
-
 import Link from "next/link"
-// import AuthButtons from "../auth-buttons/AuthButtons"
 
 const Navbar = () => {
   const { setIsMobileNavOpen } = use(NavigationContext)
@@ -29,19 +27,6 @@ const Navbar = () => {
             <Menu />
           </Button>
         </div>
-
-        {/* <div className="px-2">
-          <Link href="/tickets">Tickets</Link>
-        </div>
-        <div className="px-2">
-          <Link href="/shop">Shop</Link>
-        </div>
-        <div className="px-2">
-          <Link href="/players">Players</Link>
-        </div>
-        <div>
-          <AuthButtons/>
-        </div> */}
     </div>
   )
 }
