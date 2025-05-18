@@ -6,6 +6,8 @@ import Footer from "./components/footer/Footer";
 import AnnounceBar from "./components/announce-bar/AnnounceBar";
 import SearchBar from "./components/search-bar/SearchBar";
 import { AuthProvider } from "@/context/auth";
+import { NavigationProvider } from "@/context/nav";
+import Sidebar from "./components/sidebar/Sidebar";
 
 export const metadata: Metadata = {
   title: "Baller Fit",
@@ -21,15 +23,18 @@ export default function RootLayout({
       <html lang="en">
         <body className="bg-gray-100">
           <AuthProvider>
-            <div className="flex flex-col h-screen">
-              <AnnounceBar />
-              <Navbar />
-              <SearchBar />
-              <div className="flex-1">
-                {children}
+            <NavigationProvider>
+              <div className="flex flex-col h-screen">
+                <AnnounceBar />
+                <Sidebar />
+                <Navbar />
+                <SearchBar />
+                <div className="flex-1">
+                  {children}
+                </div>
+                <Footer />
               </div>
-              <Footer />
-            </div>
+            </NavigationProvider>
           </AuthProvider>
         </body>
       </html>
