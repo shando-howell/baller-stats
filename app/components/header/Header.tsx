@@ -8,7 +8,7 @@ const Header = () => {
             alt="Home page image"
         />
         <div 
-          className="py-6 px-4 bg-gray-100"
+          className="py-6 bg-gray-100"
         >
           <BrandsBar />
         </div>

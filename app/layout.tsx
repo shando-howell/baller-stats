@@ -26,7 +26,9 @@ export default function RootLayout({
             <NavigationProvider>
               <div className="flex flex-col h-screen">
                 <AnnounceBar />
-                <Sidebar />
+                <div className="md:hidden">
+                  <Sidebar />
+                </div>
                 <Navbar />
                 <SearchBar />
                 <div className="flex-1">

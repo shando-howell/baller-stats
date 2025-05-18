@@ -17,7 +17,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="p-2">
+        <div className="p-1">
           <Button 
             variant="ghost"
             size="icon"
