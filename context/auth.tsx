@@ -1,7 +1,7 @@
 "use client"
 
 import { auth } from "@/firebase/client"
-import { GoogleAuthProvider, User, signInWithPopup } from "firebase/auth"
+import { GoogleAuthProvider, User, signInWithRedirect } from "firebase/auth"
 import { createContext, useContext, useEffect, useState } from "react"
 
 type AuthContextType = {
@@ -32,7 +32,7 @@ export const AuthProvider = ({children}: {
 
     const loginWithGoogle = async () => {
         const provider = new GoogleAuthProvider();
-        await signInWithPopup(auth, provider);
+        await signInWithRedirect(auth, provider);
     }
 
     return (
