@@ -60,4 +60,32 @@ const players = [
   }
 ]
 
-export { products, players }
+const categories = [
+  {
+    id: "12",
+    name: "JERSEYS",
+    slug: "jerseys"
+  },
+  {
+    id: "14",
+    name: "MEN",
+    slug: "men"
+  },
+  {
+    id: "16",
+    name: "WOMEN",
+    slug: "women"
+  },
+  {
+    id: "18",
+    name: "KIDS",
+    slug: "kids"
+  },
+  {
+    id: "20",
+    name: "MORE",
+    slug: "more"
+  }
+]
+
+export { products, players, categories }

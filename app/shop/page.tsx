@@ -1,11 +1,16 @@
+import Link from 'next/link';
+import { categories } from '@/data';
+
 export default function Shop() {
   return (
     <div className="flex flex-col">
-      <div className="p-6 bg-blue-400">Jerseys</div>
-      <div className="p-6 bg-yellow-400">Men</div>
-      <div className="p-6 bg-blue-400">Women</div>
-      <div className="p-6 bg-yellow-400">Kids</div>
-      <div className="p-6 bg-blue-400">More</div>
+      {categories.map((category) => (
+        <div key={category.id} className="p-6 mb-2 bg-blue-400">
+          <Link href={`/shop/${category.slug}`}>
+            {category.name}
+          </Link>
+        </div>
+      ))}
     </div>
   )
   

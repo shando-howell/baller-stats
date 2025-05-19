@@ -35,6 +35,11 @@ const Sidebar = () => {
         closeMobileNav();
     }
 
+    const handleHome = () => {
+        router.push("/");
+        closeMobileNav();
+    }
+
     return (
         <>
             {isMobileNavOpen && (
@@ -82,6 +87,13 @@ const Sidebar = () => {
                         className="w-full mb-4 bg-white hover:bg-gray-50 text-blue-700 border border-gray-200/50 shadow-sm hover:shadow transition-all duration-200"
                     >
                         Sign Up
+                    </Button>
+
+                    <Button
+                        onClick={handleHome}
+                        className="w-full mb-4 bg-white hover:bg-gray-50 text-blue-700 border border-gray-200/50 shadow-sm hover:shadow transition-all duration-200"
+                    >
+                        Home
                     </Button>
                 </div>
             </div>
