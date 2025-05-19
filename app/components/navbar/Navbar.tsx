@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { NavigationContext } from "@/context/nav";
 import { Menu } from "lucide-react";
-import Link from "next/link"
 
 const Navbar = () => {
   const { setIsMobileNavOpen } = use(NavigationContext)
